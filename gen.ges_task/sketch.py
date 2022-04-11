@@ -31,7 +31,9 @@ def draw():
         index = alphabet.index(c.upper())
         if index < 0: continue
 
-        fill(255, char_counts[index]*3)
+        if mouse_x < 20: fill(255)
+        else: fill(255, char_counts[index]*3)
+
         sort_y = index * 20 + 40
         m = remap(mouse_x, 50, width-50, 0, 1)
         m = constrain(m, 0, 1)
