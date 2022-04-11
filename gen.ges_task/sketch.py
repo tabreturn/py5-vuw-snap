@@ -4,53 +4,41 @@
 
 import string
 
+with open('text.txt', 'r') as f:
+    joined_txt = f.readlines()
+
+joined_txt = ' '.join(joined_txt).replace('\n', '')
+alphabet = string.ascii_uppercase + string.digits + ' .+,'
+font_size, leading, tracking = 18, 30, 20
+char_counts = [0] * len(alphabet)
+
+for char in joined_txt:
+    index = alphabet.index(char.upper())
+    if index > -1: char_counts[index] += 1
+
 
 def setup():
-    # processing setup code
-    size(1000//2, 600//2)
-    color_mode(HSB, 360, 100, 100, 100)
-    mono = create_font('data/Consolas.ttf', 18)
+    size(900, 620)
+    mono = create_font('Consolas.ttf', font_size)
     text_font(mono)
-    
-    # text and alphabet lists
-    global joined_txt, alphabet, counters
-    
-    with open('data/text.txt', 'r') as f:
-        joined_txt = f.readlines()
-
-    alphabet = string.ascii_uppercase + string.digits + ' .+,';
-    joined_txt = ' '.join(joined_txt).replace('\n','')
-    counters = [0] * len(alphabet)
-    count_characters()
 
 
 def draw():
-    background('#FFF')
+    background('#518')
     pos_x, pos_y = 20, 40
-    
+
     for c in joined_txt:
         index = alphabet.index(c.upper())
         if index < 0: continue
-        
-        fill(0, 100, 255, counters[index]*3)
+
+        fill(255, char_counts[index]*3)
         sort_y = index * 20 + 40
         m = remap(mouse_x, 50, width-50, 0, 1)
         m = constrain(m, 0, 1)
         inter_y = lerp(pos_y, sort_y, m)
-
         text(c, pos_x, inter_y)
-        
-        if pos_x > width-200 and c.upper() == ' ':
-            pos_y += 30
-            pos_x += 20
+        pos_x += text_width(c)
 
-
-def count_characters():
-    global counters
-    
-    for c in joined_txt:
-        index = alphabet.index(c.upper())
-        if index > -1: counters[index] += 1
-
-   
-
+        if pos_x > width/1.2 and c.upper() == ' ':
+            pos_y += leading
+            pos_x = tracking
