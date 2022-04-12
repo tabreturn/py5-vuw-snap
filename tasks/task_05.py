@@ -1,11 +1,10 @@
-# python pdb debugger example
+# numpy arrays to adjust pixels example
 
-import pdb
+size(200, 200)
 
-x = 0
-
-def draw():
-    global x
-    circle(x, height/2, 10)
-    x += 10
-    pdb.set_trace()
+array = np.zeros((height, width, 3))
+array[10:20, 30:60, 1] = 255  # green
+#array[:60, :, 0] = 255       # red
+#array[:, -60:, 2] = 125      # blue
+set_np_pixels(array, bands='RGB')
+print(array)

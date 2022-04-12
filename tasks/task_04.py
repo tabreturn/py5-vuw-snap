@@ -1,16 +1,11 @@
-# thonny plotter example (view > plotter)
-# (also check out view > outline for functions)
+# python pdb debugger example
 
-def setup():
-    size(300, 300)
-    frame_rate(5)
+import pdb
+
+x = 0
 
 def draw():
-    background(100)
-    theta = frame_count/10.
-    translate(width/2, height/2)
-    x = sin(theta)
-    y = cos(theta)
-    circle(x*50, y*50, 10)
-    print('x:', x, 'y:', y*-1)
-
+    global x
+    circle(x, height/2, 10)
+    x += 10
+    pdb.set_trace()  # try 'c' (in the shell) to continue

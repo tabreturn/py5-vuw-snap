@@ -1,5 +1,4 @@
 # module mode example
-# (you can change the thonny theme using tools > options > theme & font)
 
 import py5
 
