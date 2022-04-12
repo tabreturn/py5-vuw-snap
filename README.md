@@ -4,13 +4,9 @@
 
 ## Session activities and materials
 
-Here are the **session slides**: [slides.pdf](https://raw.githubusercontent.com/tabreturn/cc-fest-plotter/main/slides.pdf)
+**1 - Session slides**: [slides.pdf](https://raw.githubusercontent.com/tabreturn/cc-fest-plotter/main/slides.pdf)
 
-**1 - MyBinder.org notebook:** https://mybinder.org/v2/gh/hx2A/py5examples/HEAD?urlpath=lab
-
-**2 - Thonny plug-in instructions:** https://github.com/tabreturn/thonny-py5mode
-
-**3 - Tasks:** https://github.com/tabreturn/cc-fest-py5/tree/main/tasks
+**2 - Tasks:** [./tree/main/tasks](/tree/main/tasks)
 
 ## py5 resources
 
