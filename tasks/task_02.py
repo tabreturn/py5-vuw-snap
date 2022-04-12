@@ -1,4 +1,4 @@
-# imported mode example
+# static mode, interactive/animated example
 
 def setup():
     size(300, 200)
