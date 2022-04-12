@@ -4,7 +4,7 @@
 
 ## Session activities and materials
 
-**1 - Session slides**: [slides.pdf](https://raw.githubusercontent.com/tabreturn/cc-fest-plotter/main/slides.pdf)
+**1 - Session slides**: [./slides.pdf](./slides.pdf)
 
 **2 - Tasks:** [./tasks](./tasks)
 
