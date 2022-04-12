@@ -1,5 +1,4 @@
 # module mode example
-# (you can change the thonny theme using tools > options > theme & font)
 
 import py5
 
@@ -11,4 +10,3 @@ def draw():
     py5.circle(py5.mouse_x, py5.mouse_y, 10)
 
 py5.run_sketch()
-

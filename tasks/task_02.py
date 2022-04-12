@@ -6,4 +6,3 @@ def setup():
 def draw():
     fill('#F00')
     circle(mouse_x, mouse_y, 10)
-
