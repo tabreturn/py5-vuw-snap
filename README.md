@@ -6,7 +6,7 @@
 
 **1 - Session slides**: [slides.pdf](https://raw.githubusercontent.com/tabreturn/cc-fest-plotter/main/slides.pdf)
 
-**2 - Tasks:** [./tree/main/tasks](/tree/main/tasks)
+**2 - Tasks:** [../tree/main/tasks](../tree/main/tasks)
 
 ## py5 resources
 
