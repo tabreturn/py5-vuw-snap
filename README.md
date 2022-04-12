@@ -1,6 +1,6 @@
 # cc-fest-py5dataviz
 
-*Resources for my CC Fest 2022 session (Data visualisation tools/techniques in Python(using py5))*
+*Resources for my CC Fest 2022 session (Data visualisation tools/techniques in Python (using py5))*
 
 ## Session activities and materials
 
